@@ -196,9 +196,9 @@
 
     let _ttreg = / t{1,2}(\d+)/,
         _clearttClsReg = / t{1,2}\d+| bad/;
-
+    let count = 1
+    
     w.refreshGameLayer = function(box, loop, offset) {
-        let count = 1
         let i = Math.floor(Math.random() * 1000) % 4 + (loop ? 0 : 4);
         for (let j = 0; j < box.children.length; j++) {
             let r = box.children[j],
