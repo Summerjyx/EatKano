@@ -140,8 +140,14 @@ body {
     background-position: center;
 }
 
-.t1,
-.t2,
+.t1{
+    background-size: auto 100%;
+    background-image: url(./image/t1.png);
+}
+.t2{
+    background-size: auto 100%;
+    background-image: url(./image/t2.png);
+}
 .t3,
 .t4,
 .t5 {
