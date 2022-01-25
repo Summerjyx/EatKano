@@ -220,7 +220,13 @@
                     count = 1;
                 }
                 r.notEmpty = true;
-                i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4;
+                let tmp = (Math.floor(j / 4) + 1) * 4;
+                let diff = i - tmp + 4;
+                if (count == 1) {
+                    i = tmp + Math.round(Math.random() * (diff - 0));
+                } else {
+                    i = tmp + Math.round(Math.random() * (3 - diff)) + diff;
+                }
             } else {
                 r.notEmpty = false;
             }
